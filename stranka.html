@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINA URBAN — Streetwear & Gear</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Odkaz na externí CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Globální přepínače pro košík a pokladnu -->
+    <input type="checkbox" id="cart-toggle">
+    <input type="checkbox" id="checkout-toggle">
+
+    <!-- Radio tlačítka pro filtrování kolekcí -->
+    <input type="radio" name="collection-filter" id="filter-all" checked>
+    <input type="radio" name="collection-filter" id="filter-winter">
+    <input type="radio" name="collection-filter" id="filter-summer">
+    <input type="radio" name="collection-filter" id="filter-techwear">
+    <input type="radio" name="collection-filter" id="filter-accessories">
+
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">Lumina<span>.</span> Urban</a>
+            <ul class="nav-links">
+                <li><a href="#katalog">Kompletní Drop</a></li>
+                <li><a href="#katalog">Podzim/Zima</a></li>
+                <li><a href="#katalog">Letní Drop</a></li>
+                <li><a href="#katalog">Techwear</a></li>
+            </ul>
+            <div class="nav-actions">
+                <label for="cart-toggle" class="cart-icon-label">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Next-Gen <span>Streetwear & Gear</span></h1>
+            <p>Sezónní kolekce: Zimní bundy, letní sety, techwear a doplňky pro městský styl.</p>
+            <a href="#katalog" class="btn btn-accent">Prozkoumat kolekce</a>
+        </div>
+    </section>
+
+    <!-- MAIN CATALOGUE -->
+    <main class="container" id="katalog">
+        <div class="section-title">
+            <h2>Katalog Produktů (49 položek)</h2>
+            <p>Vyberte si sekci podle ročního období nebo stylu</p>
+        </div>
+
+        <!-- TLAČÍTKA KOLEKCÍ -->
+        <div class="collection-tabs">
+            <label for="filter-all" class="collection-tab">Všechny kousky</label>
+            <label for="filter-winter" class="collection-tab">❄️ Podzim / Zima</label>
+            <label for="filter-summer" class="collection-tab">☀️ Letní Drop</label>
+            <label for="filter-techwear" class="collection-tab">⚡ Techwear & Core</label>
+            <label for="filter-accessories" class="collection-tab">💍 Doplňky</label>
+        </div>
+
+        <!-- PRODUCTS GRID (49 PRODUKTŮ) -->
+        <div class="products-grid">
+            
+            <!-- PODZIM / ZIMA (1-12) -->
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop" alt="P1"></div>
+                <div class="product-info"><h3 class="product-title">Oversized Heavyweight Hoodie 'Void'</h3><span class="product-price">2 190 Kč</span><button class="btn-detail add-to-cart" data-id="1" data-title="Oversized Heavyweight Hoodie 'Void'" data-price="2190" data-img="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800&auto=format&fit=crop" alt="P3"></div>
+                <div class="product-info"><h3 class="product-title">Thermal Fleece Zip Jacket</h3><span class="product-price">2 890 Kč</span><button class="btn-detail add-to-cart" data-id="3" data-title="Thermal Fleece Zip Jacket" data-price="2890" data-img="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?q=80&w=800&auto=format&fit=crop" alt="P4"></div>
+                <div class="product-info"><h3 class="product-title">Wool Blend Trench Coat</h3><span class="product-price">4 990 Kč</span><button class="btn-detail add-to-cart" data-id="4" data-title="Wool Blend Trench Coat" data-price="4990" data-img="https://images.unsplash.com/photo-1548883354-7622d03aca27?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop" alt="P5"></div>
+                <div class="product-info"><h3 class="product-title">Ribbed Winter Beanie Charcoal</h3><span class="product-price">550 Kč</span><button class="btn-detail add-to-cart" data-id="5" data-title="Ribbed Winter Beanie Charcoal" data-price="550" data-img="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=800&auto=format&fit=crop" alt="P6"></div>
+                <div class="product-info"><h3 class="product-title">Heavy Knit Winter Sweater</h3><span class="product-price">1 890 Kč</span><button class="btn-detail add-to-cart" data-id="6" data-title="Heavy Knit Winter Sweater" data-price="1890" data-img="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=800&auto=format&fit=crop" alt="P7"></div>
+                <div class="product-info"><h3 class="product-title">Stormproof Parka Jacket</h3><span class="product-price">5 290 Kč</span><button class="btn-detail add-to-cart" data-id="7" data-title="Stormproof Parka Jacket" data-price="5290" data-img="https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?q=80&w=800&auto=format&fit=crop" alt="P8"></div>
+                <div class="product-info"><h3 class="product-title">Insulated Winter Gloves</h3><span class="product-price">790 Kč</span><button class="btn-detail add-to-cart" data-id="8" data-title="Insulated Winter Gloves" data-price="790" data-img="https://images.unsplash.com/photo-1543076447-215ad9ba6923?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?q=80&w=800&auto=format&fit=crop" alt="P9"></div>
+                <div class="product-info"><h3 class="product-title">Cashmere Blend Scarf</h3><span class="product-price">990 Kč</span><button class="btn-detail add-to-cart" data-id="9" data-title="Cashmere Blend Scarf" data-price="990" data-img="https://images.unsplash.com/photo-1520975954732-35dd22299614?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=800&auto=format&fit=crop" alt="P10"></div>
+                <div class="product-info"><h3 class="product-title">Corduroy Winter Overshirt</h3><span class="product-price">1 690 Kč</span><button class="btn-detail add-to-cart" data-id="10" data-title="Corduroy Winter Overshirt" data-price="1690" data-img="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=800&auto=format&fit=crop" alt="P11"></div>
+                <div class="product-info"><h3 class="product-title">Flannel Check Hooded Shirt</h3><span class="product-price">1 490 Kč</span><button class="btn-detail add-to-cart" data-id="11" data-title="Flannel Check Hooded Shirt" data-price="1490" data-img="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="winter">
+                <div class="product-image"><span class="product-tag">Zima</span><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop" alt="P12"></div>
+                <div class="product-info"><h3 class="product-title">Quilted Liner Vest</h3><span class="product-price">1 390 Kč</span><button class="btn-detail add-to-cart" data-id="12" data-title="Quilted Liner Vest" data-price="1390" data-img="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+
+            <!-- LETNÍ DROP (13-24) -->
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop" alt="P13"></div>
+                <div class="product-info"><h3 class="product-title">Acid Wash Heavyweight Tee</h3><span class="product-price">990 Kč</span><button class="btn-detail add-to-cart" data-id="13" data-title="Acid Wash Heavyweight Tee" data-price="990" data-img="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=800&auto=format&fit=crop" alt="P14"></div>
+                <div class="product-info"><h3 class="product-title">Graphic Vintage Box Tee</h3><span class="product-price">890 Kč</span><button class="btn-detail add-to-cart" data-id="14" data-title="Graphic Vintage Box Tee" data-price="890" data-img="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=800&auto=format&fit=crop" alt="P15"></div>
+                <div class="product-info"><h3 class="product-title">Nylon Lightweight Summer Shorts</h3><span class="product-price">1 190 Kč</span><button class="btn-detail add-to-cart" data-id="15" data-title="Nylon Lightweight Summer Shorts" data-price="1190" data-img="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800&auto=format&fit=crop" alt="P16"></div>
+                <div class="product-info"><h3 class="product-title">Classic Minimal Tank Top</h3><span class="product-price">650 Kč</span><button class="btn-detail add-to-cart" data-id="16" data-title="Classic Minimal Tank Top" data-price="650" data-img="https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop" alt="P17"></div>
+                <div class="product-info"><h3 class="product-title">Lumina Embroidered Snapback</h3><span class="product-price">750 Kč</span><button class="btn-detail add-to-cart" data-id="17" data-title="Lumina Embroidered Snapback" data-price="750" data-img="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=800&auto=format&fit=crop" alt="P18"></div>
+                <div class="product-info"><h3 class="product-title">Urban Shield Sunglasses</h3><span class="product-price">990 Kč</span><button class="btn-detail add-to-cart" data-id="18" data-title="Urban Shield Sunglasses" data-price="990" data-img="https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop" alt="P19"></div>
+                <div class="product-info"><h3 class="product-title">Canvas Summer Slip-ons</h3><span class="product-price">1 290 Kč</span><button class="btn-detail add-to-cart" data-id="19" data-title="Canvas Summer Slip-ons" data-price="1290" data-img="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=800&auto=format&fit=crop" alt="P20"></div>
+                <div class="product-info"><h3 class="product-title">Relaxed Linen Shirt</h3><span class="product-price">1 390 Kč</span><button class="btn-detail add-to-cart" data-id="20" data-title="Relaxed Linen Shirt" data-price="1390" data-img="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=800&auto=format&fit=crop" alt="P21"></div>
+                <div class="product-info"><h3 class="product-title">Oversized Raw Edge Tee</h3><span class="product-price">890 Kč</span><button class="btn-detail add-to-cart" data-id="21" data-title="Oversized Raw Edge Tee" data-price="890" data-img="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop" alt="P22"></div>
+                <div class="product-info"><h3 class="product-title">Cotton Beach Bucket Hat</h3><span class="product-price">650 Kč</span><button class="btn-detail add-to-cart" data-id="22" data-title="Cotton Beach Bucket Hat" data-price="650" data-img="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1563178406-4cdc2923acbc?q=80&w=800&auto=format&fit=crop" alt="P23"></div>
+                <div class="product-info"><h3 class="product-title">Utility Swim Trunks</h3><span class="product-price">990 Kč</span><button class="btn-detail add-to-cart" data-id="23" data-title="Utility Swim Trunks" data-price="990" data-img="https://images.unsplash.com/photo-1563178406-4cdc2923acbc?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="summer">
+                <div class="product-image"><span class="product-tag">Léto</span><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop" alt="P24"></div>
+                <div class="product-info"><h3 class="product-title">Mesh Runner Cap</h3><span class="product-price">690 Kč</span><button class="btn-detail add-to-cart" data-id="24" data-title="Mesh Runner Cap" data-price="690" data-img="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+
+            <!-- TECHWEAR & CORE (25-37) -->
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://static.super-shop.com/1628430-carhartt-wip-mandler-cargo-pants-styx.jpg?t=fb" alt="P25"></div>
+                <div class="product-info"><h3 class="product-title">Tactical Cargo Pants Black</h3><span class="product-price">2 490 Kč</span><button class="btn-detail add-to-cart" data-id="25" data-title="Tactical Cargo Pants Black" data-price="2490" data-img="https://static.super-shop.com/1628430-carhartt-wip-mandler-cargo-pants-styx.jpg?t=fb"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop" alt="P26"></div>
+                <div class="product-info"><h3 class="product-title">Tactical Utility Chest Rig</h3><span class="product-price">1 490 Kč</span><button class="btn-detail add-to-cart" data-id="26" data-title="Tactical Utility Chest Rig" data-price="1490" data-img="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop" alt="P27"></div>
+                <div class="product-info"><h3 class="product-title">Urban Tactical Crossbody Bag</h3><span class="product-price">1 290 Kč</span><button class="btn-detail add-to-cart" data-id="27" data-title="Urban Tactical Crossbody Bag" data-price="1290" data-img="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1533515043752-b2953020964d?q=80&w=800&auto=format&fit=crop" alt="P28"></div>
+                <div class="product-info"><h3 class="product-title">Cyberpunk Modular Backpack</h3><span class="product-price">3 190 Kč</span><button class="btn-detail add-to-cart" data-id="28" data-title="Cyberpunk Modular Backpack" data-price="3190" data-img="https://images.unsplash.com/photo-1533515043752-b2953020964d?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1517445312882-bc9910d016b7?q=80&w=800&auto=format&fit=crop" alt="P29"></div>
+                <div class="product-info"><h3 class="product-title">Ripstop Utility Windbreaker</h3><span class="product-price">2 390 Kč</span><button class="btn-detail add-to-cart" data-id="29" data-title="Ripstop Utility Windbreaker" data-price="2390" data-img="https://images.unsplash.com/photo-1517445312882-bc9910d016b7?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?q=80&w=800&auto=format&fit=crop" alt="P30"></div>
+                <div class="product-info"><h3 class="product-title">Dystopian Harness Belt</h3><span class="product-price">890 Kč</span><button class="btn-detail add-to-cart" data-id="30" data-title="Dystopian Harness Belt" data-price="890" data-img="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?q=80&w=800&auto=format&fit=crop" alt="P31"></div>
+                <div class="product-info"><h3 class="product-title">Waterproof Tech Joggers</h3><span class="product-price">2 190 Kč</span><button class="btn-detail add-to-cart" data-id="31" data-title="Waterproof Tech Joggers" data-price="2190" data-img="https://images.unsplash.com/photo-1579338559194-a162d19bf842?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=800&auto=format&fit=crop" alt="P32"></div>
+                <div class="product-info"><h3 class="product-title">Futuristic High-Top Sneakers</h3><span class="product-price">3 890 Kč</span><button class="btn-detail add-to-cart" data-id="32" data-title="Futuristic High-Top Sneakers" data-price="3890" data-img="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop" alt="P33"></div>
+                <div class="product-info"><h3 class="product-title">Reflective Strap Vest</h3><span class="product-price">1 590 Kč</span><button class="btn-detail add-to-cart" data-id="33" data-title="Reflective Strap Vest" data-price="1590" data-img="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=800&auto=format&fit=crop" alt="P34"></div>
+                <div class="product-info"><h3 class="product-title">Multi-Pocket Tactical Sling</h3><span class="product-price">1 390 Kč</span><button class="btn-detail add-to-cart" data-id="34" data-title="Multi-Pocket Tactical Sling" data-price="1390" data-img="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop" alt="P35"></div>
+                <div class="product-info"><h3 class="product-title">Armored Shell Hoodie</h3><span class="product-price">2 790 Kč</span><button class="btn-detail add-to-cart" data-id="35" data-title="Armored Shell Hoodie" data-price="2790" data-img="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?q=80&w=800&auto=format&fit=crop" alt="P36"></div>
+                <div class="product-info"><h3 class="product-title">Stealth Commuter Poncho</h3><span class="product-price">1 890 Kč</span><button class="btn-detail add-to-cart" data-id="36" data-title="Stealth Commuter Poncho" data-price="1890" data-img="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="techwear">
+                <div class="product-image"><span class="product-tag">Techwear</span><img src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?q=80&w=800&auto=format&fit=crop" alt="P37"></div>
+                <div class="product-info"><h3 class="product-title">Modular Leg Holster Bag</h3><span class="product-price">1 190 Kč</span><button class="btn-detail add-to-cart" data-id="37" data-title="Modular Leg Holster Bag" data-price="1190" data-img="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+
+            <!-- DOPLŇKY (38-49) -->
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Šperky</span><img src="https://greenwitchcreations.com/cdn/shop/files/Gothic_Ring_Sets.webp?v=1752774414" alt="P38"></div>
+                <div class="product-info"><h3 class="product-title">Set Ocelových Prstýnků 'Gothic'</h3><span class="product-price">790 Kč</span><button class="btn-detail add-to-cart" data-id="38" data-title="Set Ocelových Prstýnků 'Gothic'" data-price="790" data-img="https://greenwitchcreations.com/cdn/shop/files/Gothic_Ring_Sets.webp?v=1752774414"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Šperky</span><img src="https://www.naky.cz/fotky81480/fotos/_vyr_666_15432017335145351_1935.jpg" alt="P39"></div>
+                <div class="product-info"><h3 class="product-title">Minimalistický Řetízek s Přívěskem</h3><span class="product-price">1 190 Kč</span><button class="btn-detail add-to-cart" data-id="39" data-title="Minimalistický Řetízek s Přívěskem" data-price="1190" data-img="https://www.naky.cz/fotky81480/fotos/_vyr_666_15432017335145351_1935.jpg"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" alt="P40"></div>
+                <div class="product-info"><h3 class="product-title">Heavy Steel Cuban Link Bracelet</h3><span class="product-price">990 Kč</span><button class="btn-detail add-to-cart" data-id="40" data-title="Heavy Steel Cuban Link Bracelet" data-price="990" data-img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1622445275463-afa2ab738c34?q=80&w=800&auto=format&fit=crop" alt="P41"></div>
+                <div class="product-info"><h3 class="product-title">Industrial Webbing Belt</h3><span class="product-price">690 Kč</span><button class="btn-detail add-to-cart" data-id="41" data-title="Industrial Webbing Belt" data-price="690" data-img="https://images.unsplash.com/photo-1622445275463-afa2ab738c34?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=800&auto=format&fit=crop" alt="P42"></div>
+                <div class="product-info"><h3 class="product-title">Matte Black Stainless Bottle</h3><span class="product-price">590 Kč</span><button class="btn-detail add-to-cart" data-id="42" data-title="Matte Black Stainless Bottle" data-price="590" data-img="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop" alt="P43"></div>
+                <div class="product-info"><h3 class="product-title">Leather Card Holder Minimal</h3><span class="product-price">790 Kč</span><button class="btn-detail add-to-cart" data-id="43" data-title="Leather Card Holder Minimal" data-price="790" data-img="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=800&auto=format&fit=crop" alt="P44"></div>
+                <div class="product-info"><h3 class="product-title">Titanium Keychain Carabiner</h3><span class="product-price">450 Kč</span><button class="btn-detail add-to-cart" data-id="44" data-title="Titanium Keychain Carabiner" data-price="450" data-img="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800&auto=format&fit=crop" alt="P45"></div>
+                <div class="product-info"><h3 class="product-title">Streetwear Sticker Pack (50ks)</h3><span class="product-price">290 Kč</span><button class="btn-detail add-to-cart" data-id="45" data-title="Streetwear Sticker Pack (50ks)" data-price="290" data-img="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop" alt="P46"></div>
+                <div class="product-info"><h3 class="product-title">Urban Minimalist Watch Steel</h3><span class="product-price">2 490 Kč</span><button class="btn-detail add-to-cart" data-id="46" data-title="Urban Minimalist Watch Steel" data-price="2490" data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1576053139782-08edc10df175?q=80&w=800&auto=format&fit=crop" alt="P47"></div>
+                <div class="product-info"><h3 class="product-title">Glow in Dark Lanyard</h3><span class="product-price">250 Kč</span><button class="btn-detail add-to-cart" data-id="47" data-title="Glow in Dark Lanyard" data-price="250" data-img="https://images.unsplash.com/photo-1576053139782-08edc10df175?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop" alt="P48"></div>
+                <div class="product-info"><h3 class="product-title">Tactical Phone Pouch</h3><span class="product-price">590 Kč</span><button class="btn-detail add-to-cart" data-id="48" data-title="Tactical Phone Pouch" data-price="590" data-img="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+            <div class="product-card" data-collection="accessories">
+                <div class="product-image"><span class="product-tag">Doplňky</span><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop" alt="P49"></div>
+                <div class="product-info"><h3 class="product-title">Reflective Shoelaces Set</h3><span class="product-price">190 Kč</span><button class="btn-detail add-to-cart" data-id="49" data-title="Reflective Shoelaces Set" data-price="190" data-img="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop"><i class="fa-solid fa-cart-plus"></i> Koupit</button></div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- CART SIDEBAR & CHECKOUT DRAWER -->
+    <label for="cart-toggle" class="cart-overlay"></label>
+    <div class="cart-drawer">
+        
+        <!-- POHLED 1: Standardní obsah košíku -->
+        <div class="cart-view-standard">
+            <div class="cart-header">
+                <h3>Váš Košík</h3>
+                <label for="cart-toggle" class="close-cart"><i class="fa-solid fa-xmark"></i></label>
+            </div>
+            <div class="cart-items" id="cart-items-container">
+                <!-- Zde JavaScript dynamicky vykreslí přidané položky -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Celkem:</span>
+                    <span id="cart-total-price">0 Kč</span>
+                </div>
+                <label for="checkout-toggle" class="btn btn-accent" style="text-align: center; display: block; width: 100%; cursor: pointer;">Pokračovat k pokladně</label>
+                
+                <div class="express-checkout">
+                    <a href="#" class="pay-btn apple-pay"><i class="fa-brands fa-apple"></i> Pay</a>
+                    <a href="#" class="pay-btn google-pay"><i class="fa-brands fa-google"></i> Pay</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- POHLED 2: Pokladní formulář (opravený křížek) -->
+        <div class="cart-view-checkout">
+            <div class="cart-header">
+                <label for="checkout-toggle" class="back-to-cart"><i class="fa-solid fa-arrow-left"></i> Zpět</label>
+                <h3>Pokladna</h3>
+                <div style="width: 20px;"></div>
+            </div>
+            <label for="cart-toggle" class="close-cart checkout-close-btn"><i class="fa-solid fa-xmark"></i></label>
+            <div class="checkout-form">
+                <div class="form-row">
+                    <div class="form-group"><label>Jméno</label><input type="text" placeholder="Jan" required></div>
+                    <div class="form-group"><label>Příjmení</label><input type="text" placeholder="Novák" required></div>
+                </div>
+                <div class="form-group"><label>E-mail</label><input type="email" placeholder="jan.novak@email.cz" required></div>
+                <div class="form-group"><label>Telefon</label><input type="tel" placeholder="+420 603 123 456" required></div>
+                <div class="form-group"><label>Ulice a č. popisné</label><input type="text" placeholder="Václavské náměstí 1" required></div>
+                <div class="form-row">
+                    <div class="form-group"><label>Město</label><input type="text" placeholder="Praha" required></div>
+                    <div class="form-group"><label>PSČ</label><input type="text" placeholder="110 00" required></div>
+                </div>
+                <div class="form-group">
+                    <label>Doprava</label>
+                    <select>
+                        <option>Kurýr PPL / DPD (+ 99 Kč)</option>
+                        <option>Zásilkovna - Výdejní místo (+ 79 Kč)</option>
+                        <option>Osobní odběr Praha (+ 0 Kč)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Platba</label>
+                    <select>
+                        <option>Platba kartou online</option>
+                        <option>Apple Pay / Google Pay</option>
+                        <option>Dobírka (+ 39 Kč)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total" style="font-size: 15px;">
+                    <span>Celkem k úhradě:</span>
+                    <span id="checkout-total-price" style="color: var(--accent);">0 Kč</span>
+                </div>
+                <a href="#" class="btn btn-accent" style="width: 100%; text-align: center;" onclick="alert('Děkujeme za objednávku! (Demo ukázka)'); return false;">Dokončit objednávku</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Lumina Urban</h4>
+                <p style="color: #aaa; font-size: 14px; line-height: 1.6;">Nekompromisní streetwearová značka a doplňky pro lidi, kteří žijí nočním městem.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Informace</h4>
+                <ul>
+                    <li><a href="#">Sledovat zásilku</a></li>
+                    <li><a href="#">Doprava & Reklamace</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Spoj se s námi</h4>
+                <ul>
+                    <!-- Změněný odkaz na Instagram účet dumybroo -->
+                    <li><a href="https://instagram.com/dumybroo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram (@dumybroo)</a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> drop@luminaurban.cz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 LUMINA URBAN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- INTERAKTIVNÍ SKRIPT PRO FUNKČNÍ KOŠÍK -->
+    <script>
+        let cart = [];
+
+        const cartItemsContainer = document.getElementById('cart-items-container');
+        const cartCount = document.getElementById('cart-count');
+        const cartTotalPrice = document.getElementById('cart-total-price');
+        const checkoutTotalPrice = document.getElementById('checkout-total-price');
+
+        // Přidání produktu do košíku
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const id = button.getAttribute('data-id');
+                const title = button.getAttribute('data-title');
+                const price = parseInt(button.getAttribute('data-price'));
+                const img = button.getAttribute('data-img');
+
+                const existingItem = cart.find(item => item.id === id);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({ id, title, price, img, quantity: 1 });
+                }
+
+                updateCart();
+                
+                // Automaticky otevřít košík po přidání
+                document.getElementById('cart-toggle').checked = true;
+            });
+        });
+
+        // Vykreslení a aktualizace košíku
+        function updateCart() {
+            cartItemsContainer.innerHTML = '';
+            let totalCount = 0;
+            let totalPrice = 0;
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p style="color: var(--gray); text-align: center; margin-top: 40px;">Váš košík je prázdný.</p>';
+            }
+
+            cart.forEach(item => {
+                totalCount += item.quantity;
+                totalPrice += item.price * item.quantity;
+
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+                itemElement.innerHTML = `
+                    <img src="${item.img}" alt="${item.title}">
+                    <div class="cart-item-details">
+                        <div class="cart-item-title">${item.title}</div>
+                        <div class="cart-item-price">${(item.price * item.quantity).toLocaleString()} Kč</div>
+                        <div class="cart-item-actions" style="display: flex; gap: 10px; align-items: center; margin-top: 6px;">
+                            <button onclick="changeQuantity('${item.id}', -1)" style="background: #ddd; border: none; width: 22px; height: 22px; cursor: pointer; border-radius: 3px; font-weight: bold;">-</button>
+                            <span style="font-size: 13px; font-weight: 600;">${item.quantity}</span>
+                            <button onclick="changeQuantity('${item.id}', 1)" style="background: #ddd; border: none; width: 22px; height: 22px; cursor: pointer; border-radius: 3px; font-weight: bold;">+</button>
+                            <button onclick="removeItem('${item.id}')" style="background: none; border: none; color: var(--accent); cursor: pointer; margin-left: auto; font-size: 14px;"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+            });
+
+            cartCount.textContent = totalCount;
+            cartTotalPrice.textContent = totalPrice.toLocaleString() + ' Kč';
+            checkoutTotalPrice.textContent = totalPrice.toLocaleString() + ' Kč';
+        }
+
+        // Změna množství produktu (+/-)
+        window.changeQuantity = function(id, change) {
+            const item = cart.find(i => i.id === id);
+            if (item) {
+                item.quantity += change;
+                if (item.quantity <= 0) {
+                    cart = cart.filter(i => i.id !== id);
+                }
+                updateCart();
+            }
+        }
+
+        // Úplné smazání položky z košíku
+        window.removeItem = function(id) {
+            cart = cart.filter(i => i.id !== id);
+            updateCart();
+        }
+    </script>
+</body>
+</html>
